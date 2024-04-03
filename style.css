@@ -200,6 +200,7 @@
 /* Menu bar section started */
 .menuBarDiv{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
     background-color: rgb(113, 114, 116);
@@ -219,5 +220,6 @@
 }
 .heroSection2 img{
     border-radius: 10px;
+    width: 100%;
 }
 /* Hero section 2 ended */
