@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header part started */
+
+.headerMain{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogo{
+    width: 100%;
+}
+
+.headerPhone{
+    width: 30%;
+    margin-right: 2.5rem;
+}
+
+.logo{
+    width: 15.5rem;
+}
+
+.headerPhoneNumber{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(127, 214, 255);
+    border: 2px solid black;
+    padding-left:2.5rem ;
+    margin-top: 25px;
+    border-radius: 30px;
+}
+
+.headerPhoneMain{
+    position: relative;
+}
+
+.headerPhoneSchedule{
+    position: absolute;
+    top: -12px;
+    right: 25px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.headerPhoneCall{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background-color: white;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1386px) {
+    .headerPhoneNumber{
+        padding-left:0.6rem ;
+    }   
+}
+@media screen and (max-width:1256px) {
+     .headerPhone{
+        width: 100%;
+     }
+}
+@media screen and (max-width:1256px) {
+    .headerPhone{
+        width: 80%;
+     }
+     .headerMain{
+        display: block;
+     }
+}
+
+/* header part ended */
+
+/* nav section started  */
+
+.navSection{
+    background-color: rgba(182, 182, 182, 0.616);
+}
+.menuDiv{
+    display: none;
+}
+.navMain{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navList{
+    display: flex;
+    list-style: none;
+    margin-left: 200px;
+}
+.navList li{
+    margin-left: 20px;
+    font-size: small;
+    font-weight: 500;
+}
+.navList li:hover{
+    color: rgb(60, 186, 245);
+}
+.navList li:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    margin-top: -2px; 
+    
+}
+.navListForMobile{
+    list-style: none;
+    display: none;
+}
+.navListForMobile li:hover{
+    color: rgb(60, 186, 245);
+}
+.navListForMobile li:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    margin-top: -2px; 
+    
+}
+.navLogBtn{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    background-color: rgb(127, 214, 255);
+    font-size: small;
+}
+.navBarBtn{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-size: small;
+}
+
+@media screen and (max-width:1256px) {
+    .navList{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navList{
+        display: none;
+    }
+    .menuDiv{
+        display: block;
+    }
+}
